@@ -19,6 +19,13 @@ public class GenerateParentheses {
         return result;
     }
 
+    /**
+     * 相当于生成全部组合
+     * @param left 剩余可以添加的'('
+     * @param right 剩余可以添加的')'
+     * @param list
+     * @param str
+     */
     private void generateParenthesis(int left, int right, List<String> list, String str) {
         if (left < 0 || right < 0 || left > right) return;
         if (left == 0 && right == 0) list.add(str);
