@@ -10,4 +10,9 @@ public class StringTest {
         sb.append(" ");
         System.out.println(sb.toString());
     }
+
+    @Test
+    public void test(){
+        System.out.println(3>>-1);
+    }
 }
