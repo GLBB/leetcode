@@ -2,6 +2,8 @@ package cn.gl;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 public class StringTest {
 
     @Test
@@ -14,5 +16,13 @@ public class StringTest {
     @Test
     public void test(){
         System.out.println(3>>-1);
+    }
+    
+    @Test
+    public void test2(){
+        ArrayList<String> list = new ArrayList<>();
+        list.add(null);
+        System.out.println(list);
+        System.out.println(list.size());
     }
 }
