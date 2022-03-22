@@ -2,7 +2,7 @@ package cn.gl;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,7 +13,8 @@ import java.util.stream.Collectors;
 public class TransposeFile {
 
     public static void main(String[] args) throws IOException {
-        List<String> origin = Files.readAllLines(Path.of("file.txt"));
+     
+        List<String> origin = Files.readAllLines(Paths.get("file.txt"));
         List<String[]> list = origin.stream().map(line -> {
             String[] s = line.split(" ");
             return s;

@@ -25,7 +25,7 @@ package cn.gl;
 public class MedianOfTwoSortedArrays {
 
     public static void main(String[] args) {
-        var solution = new MedianOfTwoSortedArrays();
+        MedianOfTwoSortedArrays solution = new MedianOfTwoSortedArrays();
         int[] nums1 = {1, 3};
         int[] nums2 = {2};
         double result = solution.findMedianSortedArrays(nums1, nums2);
