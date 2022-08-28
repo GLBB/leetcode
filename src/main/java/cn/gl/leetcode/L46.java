@@ -3,6 +3,9 @@ package cn.gl.leetcode;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * 46. 全排列
+ */
 public class L46 {
 
     public static void main(String[] args) {
